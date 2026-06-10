@@ -3,12 +3,12 @@
 ## Representation of a Weighted Graph through a Vector
 Let a weighted graph be given as shown in the figure, representing a flow network.
 
-![Flow netowrk (graph)](https://github.com/teodora-jpg/Recursive_multi-state_network_reliability/blob/master/readme_pictures/Picture1.png)
+![Flow netowrk (graph)](https://github.com/teodora338/recursive-multi-state-network-reliability/blob/master/readme_pictures/Picture1.png)
 
 The graph can be represented by a vector whose components are the weights of the edges.
 We assign each edge to the corresponding component in the vector.
 
-![Assinging edges to vector component](https://github.com/teodora-jpg/Recursive_multi-state_network_reliability/blob/master/readme_pictures/Picture2.png)
+![Assinging edges to vector component](https://github.com/teodora338/recursive-multi-state-network-reliability/blob/master/readme_pictures/Picture2.png)
 
 Accordingly, the graph can be represented by the vector **(2, 2, 2, 2, 2, 2, 1, 1)**.
 
@@ -28,7 +28,7 @@ Let the edges of the graph have different weights, with each weight occurring wi
 
 For example, let the edges of the graph from the figure take weights 0, 1, 2, and 3. Then, we define a probability matrix **P**, where **P[i][j]** represents the probability that the *i-th component/edge* will be in state *j* (i.e., have weight/capacity *j*).
 
-![Component probabilities matrix](https://github.com/teodora-jpg/Recursive_multi-state_network_reliability/blob/master/readme_pictures/Picture3.png)
+![Component probabilities matrix](https://github.com/teodora338/recursive-multi-state-network-reliability/blob/master/readme_pictures/Picture3.png)
 
 To calculate the probability that the system works (its reliability), we can use the minimal paths of the graph. Specifically, the system works if its vector is greater than or equal to at least one of the minimal paths—that is, the union of the minimal paths.
 
@@ -118,7 +118,7 @@ It is important to emphasize that these are **minimal paths** (no vector is grea
 The figure bellow shows calculating reliability execution times for different sets and different number of vector components, using different splitting methods (see table in `measuring_execution_time_results.xlsx`).  
 The order of the set-splitting methods corresponds to the order in the performance measurement code.
 
-![Execution time results](https://github.com/teodora-jpg/Recursive_multi-state_network_reliability/blob/master/readme_pictures/Picture4_results.PNG)
+![Execution time results](https://github.com/teodora338/recursive-multi-state-network-reliability/blob/master/readme_pictures/Picture4_results.PNG)
 
 ---
 
